@@ -20,10 +20,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
 export const storage = getStorage(app);
 
 export async function uploadFileToFirebase(image_url: string, name: string) {
@@ -40,4 +36,4 @@ export async function uploadFileToFirebase(image_url: string, name: string) {
   } catch (error) {
     console.error(error);
   }
-}
+  }
