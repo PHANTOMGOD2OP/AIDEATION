@@ -1,12 +1,13 @@
 {
-  "name": "aideation-yt",
+  "name": "aideation",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall" : "npx drizzle-kit push:pg"
   },
   "dependencies": {
     "@clerk/backend": "^0.29.0",
